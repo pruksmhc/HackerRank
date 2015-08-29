@@ -45,13 +45,13 @@ public class Solution {
             //            System.out.println("I have now inserted"+ smallerArray[m][n] );  
                 }
                 }
-                checkSubset(biggerArray, smallerArray, numSmallerRows, numSmallerCols);
+                checkSubset(biggerArray, smallerArray);
             }
         }
 
   
 
-    private static void checkSubset(int[][] biggerArray, int[][] smallerArray, int smallerArrayRows, int smallerArrayCols){
+    private static void checkSubset(int[][] biggerArray, int[][] smallerArray){
         boolean isPotential = true; 
         int row = 0; 
         int col = 0; 
