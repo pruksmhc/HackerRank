@@ -20,8 +20,7 @@ public class Solution {
     {
         ret[i] = (int) smallerPartition.get(i);
     }
-
-              printArray(ret);
+             printArray(ret);
                     
        }   
  
