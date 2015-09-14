@@ -16,7 +16,6 @@ public class Solution {
         for(int i = 0; i < numExperiments; i++){
         int numStones = in.nextInt()-1;
         int a = in.nextInt(); 
-           
         int b = in.nextInt();  
         int biggerDifference = Math.max(a, b); 
         int smallerDifference = Math.min(a,b); 
