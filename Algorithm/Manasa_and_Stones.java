@@ -22,7 +22,7 @@ public class Solution {
                Integer maxValue = (Integer) biggerDifference * numStones; 
                int difference  = biggerDifference - smallerDifference; 
                String valueOfStone = currentValue.toString();
-               while(currentValue < maxValue){
+               while (currentValue < maxValue) {
          	       currentValue+= difference; 
          	       valueOfStone+=" "+ currentValue.toString(); 
                }
