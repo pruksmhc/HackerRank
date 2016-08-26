@@ -41,28 +41,21 @@ public class Solution {
         int row = 0; 
         int col = 0; 
         for(int i = 0; i < biggerArray.length;i++){
-            for (int j = 0; j <biggerArray[0].length; j++){
-                if(biggerArray[i][j] == smallerArray[0][0]){
-                    System.out.println("FOUND A POTENTIAL MATCH"); 
+            for (int j = 0; j <biggerArray[0].length; j++) {
+                if (biggerArray[i][j] == smallerArray[0][0]) {
                     row = i; 
                     col = j; 
                 }
                     //mark the columns +rows. 
                     //if the biggerarray has the same instnac eof the smaller array., tehn check by row. 
                     //goign through thesmamller array. 
-                    if(i-row < smallerArray.length && j-col < smallerArray[0].length){
-                       System.out.println("Not yet out of bounds for smaller array, which has length of "+ smallerArray.length +
-                            "rows and "+smallerArray[0].length =" columns, while i is "+i +"and j is "+ j); 
-                            if(biggerArray[i][j] != smallerArray[i-row][j-col]){
-                                System.out.println("not a match, move on"); 
+                    if (i-row < smallerArray.length && j-col < smallerArray[0].length) {
+                            if (biggerArray[i][j] != smallerArray[i-row][j-col]) {
                                break;  
                             }
-                             System.out.println("Still a match"); 
-                             if((i-row) = smallerArray.length-1 && (j - col) = smallerArray[0].length -1){
-                                System.out.println("YES"); 
-                                //has now parsed to the end of th esmalelr array, has bene successful. 
+                            if ((i-row) = smallerArray.length-1 && (j - col) = smallerArray[0].length -1) {
                                 return; 
-                             }
+                            }
                         }                     
                 }
             }
