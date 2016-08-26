@@ -14,23 +14,18 @@ public class Solution {
          BigInteger inputZero = scan.nextBigInteger(); 
          BigInteger inputOne = scan.nextBigInteger();   
          int numToFound = scan.nextInt();    
-         System.out.println(fibonnacirecurs(numToFound, inputZero, inputOne));       
     }
 
  
 
     private static BigInteger fibonaccirecurs(int num, BigInteger inputZero, BigInteger inputOne){
-     if (num == 1){
-    	return inputZero; 
-    	} 
-    	else if(num == 2){
-    	return inputOne; 
-    	}else{ //recursive case. 
-    		//the mathematical formula. 
-    		return (fibonaccirecurs(num-1, inputZero, inputOne)).multiply(fibonaccirecurs(num-1, inputZero, inputOne)).add(fibonaccirecurs(num-2, inputZero, inputOne));  //this should return the fibonnaci sequence. 
-
-    	}
+         if (num == 1){
+        	return inputZero; 
+         } else if(num == 2){
+        	return inputOne; 
+         } else {
+            return (fibonaccirecurs(num-1, inputZero, inputOne)).multiply(fibonaccirecurs(num-1, inputZero, inputOne)).add(fibonaccirecurs(num-2, inputZero, inputOne));  //this should return the fibonnaci sequence. 
+        }
     }
-
 
 }
